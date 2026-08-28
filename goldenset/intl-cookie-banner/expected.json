@@ -1,0 +1,18 @@
+{
+  "moment": "other",
+  "regime": "intl",
+  "expectedMoments": 1,
+  "items": [
+    { "label": "Necessary cookies", "mark": "absent", "isSelectAll": false,
+      "substance": "service_essential",
+      "quote": "The site cannot work without them.",
+      "action": "leave", "flag": null },
+    { "label": "Analytics cookies", "mark": "absent", "isSelectAll": false,
+      "substance": "unclear", "quote": null,
+      "action": "uncheck", "flag": "prechecked_optional" },
+    { "label": "Marketing cookies", "mark": "absent", "isSelectAll": false,
+      "substance": "marketing",
+      "quote": "These cookies let our advertising partners build a profile of your interests and show you targeted adverts elsewhere.",
+      "action": "uncheck", "flag": "prechecked_optional" }
+  ]
+}

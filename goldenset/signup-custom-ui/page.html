@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>회원가입</title>
+<style>.a11y{position:absolute;width:1px;height:1px;opacity:0}</style></head>
+<body>
+<div class="signup">
+  <h1>회원가입</h1>
+  <p class="guide">아이디, 비밀번호 확인 후 아래 항목에 동의해 주세요.</p>
+  <div class="chk-list">
+    <div class="chk">
+      <input type="checkbox" id="c1" class="a11y" aria-labelledby="l1">
+      <span class="box" aria-hidden="true"></span>
+      <span id="l1">서비스 이용약관</span>
+      <em class="req">필수</em>
+      <a class="view" href="/policy/terms">전문 보기</a>
+    </div>
+    <div class="chk">
+      <input type="checkbox" id="c2" class="a11y" aria-labelledby="l2" checked>
+      <span class="box" aria-hidden="true"></span>
+      <span id="l2">마케팅 목적 개인정보 활용</span>
+      <em class="opt">선택</em>
+      <a class="view" href="/policy/marketing">전문 보기</a>
+    </div>
+    <div class="chk">
+      <input type="checkbox" id="c3" class="a11y" aria-labelledby="l3" checked disabled>
+      <span class="box" aria-hidden="true"></span>
+      <span id="l3">제휴사 광고 정보 수신</span>
+      <em class="opt">선택</em>
+      <a class="view" href="/policy/partner">전문 보기</a>
+    </div>
+  </div>
+  <button type="button">가입하기</button>
+</div>
+</body></html>

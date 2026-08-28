@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>주문/결제</title></head>
+<body>
+<div class="order">
+  <h1>주문서</h1>
+  <section class="delivery"><h2>배송지 정보</h2><p>서울특별시 ○○구 ○○로 000</p></section>
+  <section class="method">
+    <h2>결제수단 선택</h2>
+    <ul><li>신용카드</li><li>무통장입금</li><li>간편결제</li></ul>
+  </section>
+  <section class="agree">
+    <h2>결제 동의</h2>
+    <div class="item">
+      <label for="o1"><input type="checkbox" id="o1"> 전자금융거래 이용약관 동의 (필수)</label>
+      <div class="detail">전자지급결제대행 서비스를 이용하기 위한 약관입니다. 결제를 진행하려면 본 약관에 동의하셔야 합니다.</div>
+    </div>
+    <div class="item">
+      <label for="o2"><input type="checkbox" id="o2"> 개인정보 제3자 제공 동의 (필수)</label>
+      <div class="detail">주문 상품의 배송을 위하여 수령인 이름, 주소, 연락처를 배송업체에 제공합니다. 제공 항목은 배송 완료 후 파기됩니다.</div>
+    </div>
+    <div class="item">
+      <label for="o3"><input type="checkbox" id="o3" checked> 마케팅 정보 수신 동의 (선택)</label>
+      <div class="detail">주문하신 상품과 관련된 할인 쿠폰 및 광고성 정보를 문자로 보내드립니다. 동의하지 않으셔도 주문에는 영향이 없습니다.</div>
+    </div>
+  </section>
+  <div class="total">최종 결제 금액 <strong>00,000원</strong></div>
+  <button type="button" class="pay">결제하기</button>
+</div>
+</body></html>

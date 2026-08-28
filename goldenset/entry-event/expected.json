@@ -1,0 +1,16 @@
+{
+  "moment": "entry",
+  "expectedMoments": 1,
+  "items": [
+    { "label": "이벤트 응모 약관 동의 (필수)", "mark": "required", "isSelectAll": false,
+      "substance": "service_essential", "quote": "응모하시려면 본 항목에 동의하셔야 합니다.",
+      "action": "check", "flag": null },
+    { "label": "제휴사 개인정보 제공 동의 (선택)", "mark": "optional", "isSelectAll": false,
+      "substance": "third_party_sharing",
+      "quote": "회사는 제휴 광고주에게 응모자의 이름과 휴대전화번호를 제공하여 상품 안내에 사용하도록 합니다.",
+      "action": "uncheck", "flag": "prechecked_optional" },
+    { "label": "광고성 정보 수신 동의 (선택)", "mark": "optional", "isSelectAll": false,
+      "substance": "marketing", "quote": "앞으로 진행되는 행사와 할인 정보를 문자와 이메일로 보내드립니다.",
+      "action": "uncheck", "flag": "prechecked_optional" }
+  ]
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <title>Agreedee</title>
+  <!--
+    An indeterminate checkbox: filled with the accent, carrying a dash rather
+    than a tick. That is not decoration — it is the state a select-all control
+    is left in once Agreedee has run, because some of the items under it were
+    refused. The mark and the product say the same thing.
+  -->
+  <rect width="128" height="128" rx="28" fill="#111111"/>
+  <rect x="24" y="24" width="80" height="80" rx="20" fill="#3fb950"/>
+  <rect x="42" y="58" width="44" height="12" rx="6" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>회원가입</title></head>
+<body>
+<form>
+  <h1>회원가입</h1>
+  <div class="row">아이디 <input type="text"></div>
+  <div class="row">비밀번호 확인 <input type="password"></div>
+  <div class="agree">
+    <div class="agree__all">
+      <label><input type="checkbox" id="all" checked> 전체 동의</label>
+    </div>
+    <div class="agree__item">
+      <label><input type="checkbox" id="i1" checked> 이용약관 동의</label><span class="mark">필수</span>
+      <div class="body">서비스 이용에 관한 회사와 회원의 기본적인 권리와 의무를 정한 약관입니다. 회원 가입을 위해 반드시 동의하셔야 합니다.</div>
+    </div>
+    <div class="agree__item">
+      <label><input type="checkbox" id="i2"> 개인정보 수집 및 이용 동의</label><span class="mark">필수</span>
+      <div class="body">서비스 제공과 회원 관리를 위하여 이름과 연락처를 수집합니다. 수집에 동의하지 않으면 회원 가입이 불가합니다.</div>
+    </div>
+    <div class="agree__item">
+      <label><input type="checkbox" id="i3" checked> 광고성 정보 수신 동의</label><span class="mark">선택</span>
+      <div class="body">신규 상품과 할인 소식을 문자로 안내드립니다. 동의를 거부하셔도 서비스 이용에 제한은 없습니다.</div>
+    </div>
+  </div>
+  <button type="submit">가입하기</button>
+</form>
+</body></html>

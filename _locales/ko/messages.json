@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Agreedee",
+    "description": "The extension name shown in Chrome and on the Web Store."
+  },
+  "extDescription": {
+    "message": "어느 사이트에서든 선택 동의를 거부합니다. 쿠키 배너와 동의 폼 모두. 제출 버튼은 절대 누르지 않습니다.",
+    "description": "The extension description shown in Chrome and on the Web Store."
+  }
+}

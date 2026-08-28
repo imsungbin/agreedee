@@ -1,0 +1,28 @@
+{
+  "name": "agreedee",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Chrome extension that refuses optional consent on any site, and never presses submit.",
+  "packageManager": "pnpm@10.18.3",
+  "engines": {
+    "node": ">=22.18.0",
+    "pnpm": ">=10"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && node tools/copy-assets.ts",
+    "watch": "tsc -p tsconfig.build.json --watch",
+    "typecheck": "tsc -p tsconfig.json && tsc -p tsconfig.test.json",
+    "test": "node --disable-warning=ExperimentalWarning --import ./tools/ts-resolve.mjs --test \"test/**/*.test.ts\"",
+    "score": "node --disable-warning=ExperimentalWarning --import ./tools/ts-resolve.mjs tools/score.ts",
+    "icons": "node --disable-warning=ExperimentalWarning --import ./tools/ts-resolve.mjs tools/icons.ts",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.2.7",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^26.4.0",
+    "jsdom": "^30.0.1",
+    "typescript": "^7.0.2"
+  }
+}

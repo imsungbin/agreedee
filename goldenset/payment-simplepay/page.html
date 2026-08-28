@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>간편결제 카드 등록</title></head>
+<body>
+<main class="pay-register">
+  <h1>간편결제 수단 등록</h1>
+  <p>카드 정보를 입력하고 결제하기 전에 아래 약관에 동의해 주세요.</p>
+  <form id="cardForm">
+    <div class="card-row">카드번호 <input type="text" inputmode="numeric"></div>
+    <div class="agree-all"><label><input type="checkbox" id="pall" checked> 전체 동의</label></div>
+    <div class="agree-item">
+      <label><input type="checkbox" id="p1" checked> 전자금융거래 기본약관</label><span class="tag">필수</span>
+      <p class="text">간편결제 서비스 제공을 위한 기본 약관입니다. 본 약관에 동의하지 않으면 결제 수단을 등록할 수 없습니다.</p>
+    </div>
+    <div class="agree-item">
+      <label><input type="checkbox" id="p2"> 개인정보 수집·이용 동의</label><span class="tag">필수</span>
+      <p class="text">카드 등록과 결제 처리를 위하여 카드사에 제공할 최소한의 정보를 수집합니다. 등록 해지 시 즉시 파기합니다.</p>
+    </div>
+    <div class="agree-item">
+      <label><input type="checkbox" id="p3" checked> 제휴사 혜택 정보 제공</label><span class="tag">필수</span>
+      <p class="text">회사는 제휴 카드사와 쇼핑몰에 회원의 결제 이력과 연락처를 제공하여 맞춤 광고와 프로모션을 안내합니다.</p>
+    </div>
+    <button type="button">결제하기</button>
+  </form>
+</main>
+</body></html>

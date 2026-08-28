@@ -1,0 +1,3 @@
+{ "moment": "payment", "source": "reconstructed", "anonymized": true,
+  "url": "https://shop.example.com/checkout",
+  "shape": "English checkout with a pre-ticked marketing box. S3 holds regardless of regime: the decision is made and reported, but nothing is written until the user clicks." }

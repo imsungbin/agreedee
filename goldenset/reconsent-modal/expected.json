@@ -1,0 +1,12 @@
+{
+  "moment": "reconsent",
+  "expectedMoments": 1,
+  "items": [
+    { "label": "개정 이용약관 동의 (필수)", "mark": "required", "isSelectAll": false,
+      "substance": "service_essential", "quote": "계속 이용하시려면 개정 약관에 동의하셔야 합니다.",
+      "action": "check", "flag": null },
+    { "label": "개인정보 마케팅 활용 동의 (선택)", "mark": "optional", "isSelectAll": false,
+      "substance": "marketing", "quote": "회원의 서비스 이용 기록을 분석하여 맞춤형 광고를 노출하고 제휴사 프로모션을 안내합니다.",
+      "action": "uncheck", "flag": "prechecked_optional" }
+  ]
+}

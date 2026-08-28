@@ -1,0 +1,19 @@
+{
+  "moment": "signup",
+  "regime": "intl",
+  "expectedMoments": 1,
+  "items": [
+    { "label": "I agree to the Terms of Service and Privacy Policy", "mark": "absent", "isSelectAll": false,
+      "substance": "service_essential",
+      "quote": "You must accept these terms to create an account.",
+      "action": "leave", "flag": null },
+    { "label": "Send me product news and special offers", "mark": "absent", "isSelectAll": false,
+      "substance": "marketing",
+      "quote": "We will email you announcements, promotions and discount codes.",
+      "action": "uncheck", "flag": "prechecked_optional" },
+    { "label": "Share my personal information with selected partners", "mark": "absent", "isSelectAll": false,
+      "substance": "third_party_sharing",
+      "quote": "We will pass your name and email address to our advertising partners so that they can contact you about their own products.",
+      "action": "uncheck", "flag": "prechecked_optional" }
+  ]
+}

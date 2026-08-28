@@ -1,0 +1,20 @@
+{
+  "moment": "verify",
+  "expectedMoments": 1,
+  "items": [
+    { "label": "전체 동의", "mark": "absent", "isSelectAll": true,
+      "substance": "unclear", "quote": null, "action": "leave", "flag": null },
+    { "label": "본인확인 서비스 이용약관 (필수)", "mark": "required", "isSelectAll": false,
+      "substance": "service_essential", "quote": "본인확인을 진행하려면 동의가 필요합니다.",
+      "action": "check", "flag": null },
+    { "label": "개인정보 수집·이용 동의 (필수)", "mark": "required", "isSelectAll": false,
+      "substance": "service_essential", "quote": "이름, 생년월일, 성별, 휴대전화번호를 본인확인 목적으로 수집합니다.",
+      "action": "check", "flag": null },
+    { "label": "고유식별정보 처리 동의 (필수)", "mark": "required", "isSelectAll": false,
+      "substance": "service_essential", "quote": "본 처리에 동의하지 않으면 인증을 진행할 수 없습니다.",
+      "action": "check", "flag": null },
+    { "label": "통신사 이용약관 (필수)", "mark": "required", "isSelectAll": false,
+      "substance": "service_essential", "quote": "동의 없이는 인증번호를 발송할 수 없습니다.",
+      "action": "check", "flag": null }
+  ]
+}

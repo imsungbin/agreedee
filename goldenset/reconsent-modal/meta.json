@@ -1,0 +1,3 @@
+{ "moment": "reconsent", "source": "reconstructed", "anonymized": true,
+  "url": "https://example.test/mypage",
+  "shape": "re-consent overlay (role=dialog) on top of an ordinary page — not a form" }

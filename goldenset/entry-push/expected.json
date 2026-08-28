@@ -1,0 +1,12 @@
+{
+  "moment": "entry",
+  "expectedMoments": 1,
+  "items": [
+    { "label": "이벤트 참여 및 개인정보 수집 동의", "mark": "required", "isSelectAll": false,
+      "substance": "service_essential", "quote": "동의하지 않으면 이벤트에 참여할 수 없습니다.",
+      "action": "check", "flag": null },
+    { "label": "앱 푸시 광고 수신 동의", "mark": "optional", "isSelectAll": false,
+      "substance": "marketing", "quote": "신규 이벤트와 할인 광고를 앱 푸시로 보내드립니다.",
+      "action": "uncheck", "flag": "prechecked_optional" }
+  ]
+}

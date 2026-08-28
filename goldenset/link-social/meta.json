@@ -1,0 +1,3 @@
+{ "moment": "link", "source": "reconstructed", "anonymized": true,
+  "url": "https://id.example.test/oauth/authorize",
+  "shape": "social login linking; the mark is embedded in the label itself (필수/선택 제공 항목)" }

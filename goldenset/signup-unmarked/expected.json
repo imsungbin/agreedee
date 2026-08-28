@@ -1,0 +1,15 @@
+{
+  "moment": "signup",
+  "expectedMoments": 1,
+  "items": [
+    { "label": "이용약관에 동의합니다", "mark": "absent", "isSelectAll": false,
+      "substance": "service_essential", "quote": "서비스를 이용하려면 본 약관에 대한 동의가 필요합니다.",
+      "action": "uncheck", "flag": "missing_mark" },
+    { "label": "개인정보 처리방침에 동의합니다", "mark": "absent", "isSelectAll": false,
+      "substance": "service_essential", "quote": "이름, 이메일, 접속 기록을 수집하여 회원 관리와 서비스 제공에 사용합니다.",
+      "action": "uncheck", "flag": "missing_mark" },
+    { "label": "이벤트 및 혜택 알림 수신에 동의합니다", "mark": "absent", "isSelectAll": false,
+      "substance": "marketing", "quote": "할인 쿠폰과 프로모션 소식을 문자와 이메일로 보내드립니다.",
+      "action": "uncheck", "flag": "missing_mark" }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "moment": "signup",
+  "expectedMoments": 1,
+  "items": [
+    { "label": "서비스 이용약관", "mark": "required", "isSelectAll": false,
+      "substance": "unclear", "quote": null, "action": "leave", "flag": null,
+      "note": "terms unreachable -> unclear -> 필수 is neither checked nor stripped (S5)" },
+    { "label": "마케팅 목적 개인정보 활용", "mark": "optional", "isSelectAll": false,
+      "substance": "unclear", "quote": null, "action": "uncheck", "flag": "prechecked_optional" },
+    { "label": "제휴사 광고 정보 수신", "mark": "optional", "isSelectAll": false,
+      "substance": "unclear", "quote": null, "action": "leave", "flag": "prechecked_optional",
+      "note": "disabled: reported but not touched" }
+  ]
+}

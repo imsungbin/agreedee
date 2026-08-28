@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Agreedee</title>
+  <style>
+    body { font: 14px/1.6 -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+           max-width: 640px; margin: 40px auto; padding: 0 20px 60px; color: #111; }
+    h1 { font-size: 20px; margin-bottom: 4px; }
+    .sub { color: #666; margin-top: 0; }
+    label { display: block; font-weight: 600; margin: 20px 0 6px; }
+    input[type=password], input[type=text], select { width: 100%; padding: 8px; font: inherit;
+           border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }
+    .row { display: flex; align-items: center; gap: 8px; margin-top: 20px; }
+    .row label { margin: 0; }
+    button { margin-top: 20px; font: inherit; background: #111; color: #fff;
+             border: 0; border-radius: 6px; padding: 8px 16px; cursor: pointer; }
+    button.secondary { background: #fff; color: #111; border: 1px solid #ccc; }
+    .note { background: #f6f6f6; border-radius: 8px; padding: 12px 16px; margin-top: 28px; color: #444; }
+    .note h2 { font-size: 13px; margin: 0 0 6px; }
+    .hint { color: #666; font-size: 12px; margin: 6px 0 0; }
+    #status { margin-left: 12px; color: #1a7f37; }
+    #probe-result { margin-left: 12px; }
+    #probe-result.bad { color: #b3261e; }
+    #probe-result.good { color: #1a7f37; }
+    fieldset { border: 0; padding: 0; margin: 0; }
+    [hidden] { display: none !important; }
+    .providers { display: flex; gap: 8px; margin-top: 6px; }
+    .providers { flex-wrap: wrap; }
+    .providers label { flex: 1 1 30%; margin: 0; font-weight: 400; border: 1px solid #ccc;
+           border-radius: 8px; padding: 10px 12px; cursor: pointer; }
+    .providers label:has(:checked) { border-color: #111; box-shadow: inset 0 0 0 1px #111; }
+    .providers .name { display: block; font-weight: 600; }
+    .providers .why { display: block; color: #666; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <!--
+    Every user-visible string carries a data-i18n key and is filled in by
+    options.ts. The markup holds no copy of its own, so a locale can never
+    half-apply and leave one line in the wrong language.
+  -->
+  <h1>Agreedee</h1>
+  <p class="sub" data-i18n="options.tagline"></p>
+
+  <label data-i18n="options.provider"></label>
+  <div class="providers">
+    <label>
+      <input type="radio" name="provider" value="anthropic">
+      <span class="name" data-i18n="options.provider.anthropic"></span>
+      <span class="why" data-i18n="options.provider.anthropic.why"></span>
+    </label>
+    <label>
+      <input type="radio" name="provider" value="openai">
+      <span class="name" data-i18n="options.provider.openai"></span>
+      <span class="why" data-i18n="options.provider.openai.why"></span>
+    </label>
+    <label>
+      <input type="radio" name="provider" value="ollama">
+      <span class="name" data-i18n="options.provider.ollama"></span>
+      <span class="why" data-i18n="options.provider.ollama.why"></span>
+    </label>
+  </div>
+
+  <fieldset id="pane-anthropic">
+    <label for="key" data-i18n="options.apiKey"></label>
+    <input type="password" id="key" placeholder="sk-ant-..." autocomplete="off" spellcheck="false">
+
+    <label for="model" data-i18n="options.model"></label>
+    <select id="model">
+      <option value="claude-sonnet-4-5" data-model-default>claude-sonnet-4-5</option>
+      <option value="claude-sonnet-5">claude-sonnet-5</option>
+      <option value="claude-haiku-4-5">claude-haiku-4-5</option>
+    </select>
+  </fieldset>
+
+  <fieldset id="pane-openai">
+    <label for="openai-url" data-i18n="options.openai.url"></label>
+    <input type="text" id="openai-url" placeholder="https://api.openai.com/v1" autocomplete="off" spellcheck="false">
+    <p class="hint" data-i18n="options.openai.urlHint"></p>
+
+    <label for="openai-key" data-i18n="options.openai.key"></label>
+    <input type="password" id="openai-key" placeholder="sk-..." autocomplete="off" spellcheck="false">
+
+    <label for="openai-model" data-i18n="options.openai.model"></label>
+    <input type="text" id="openai-model" list="openai-models" autocomplete="off" spellcheck="false">
+    <datalist id="openai-models"></datalist>
+    <p class="hint" data-i18n="options.openai.modelHint"></p>
+  </fieldset>
+
+  <fieldset id="pane-ollama">
+    <label for="ollama-url" data-i18n="options.ollama.url"></label>
+    <input type="text" id="ollama-url" placeholder="http://localhost:11434" autocomplete="off" spellcheck="false">
+
+    <label for="ollama-model" data-i18n="options.ollama.model"></label>
+    <input type="text" id="ollama-model" list="ollama-models" autocomplete="off" spellcheck="false">
+    <datalist id="ollama-models"></datalist>
+    <p class="hint" data-i18n="options.ollama.modelHint"></p>
+  </fieldset>
+
+  <label for="locale" data-i18n="options.language"></label>
+  <select id="locale">
+    <option value="auto" data-i18n="options.language.auto"></option>
+    <option value="ko">한국어</option>
+    <option value="en">English</option>
+  </select>
+
+  <div class="row">
+    <input type="checkbox" id="enabled">
+    <label for="enabled" data-i18n="options.enabled"></label>
+  </div>
+
+  <div>
+    <button id="save" data-i18n="options.save"></button><span id="status"></span>
+  </div>
+  <div>
+    <button id="probe" class="secondary" data-i18n="options.probe"></button><span id="probe-result"></span>
+  </div>
+
+  <div class="note" id="note-anthropic">
+    <h2 data-i18n="options.whatIsSent.title"></h2>
+    <span data-i18n="options.whatIsSent.body"></span>
+  </div>
+
+  <div class="note" id="note-openai">
+    <h2 data-i18n="options.openai.note.title"></h2>
+    <span data-i18n="options.openai.note.body"></span>
+  </div>
+
+  <div class="note" id="note-ollama">
+    <h2 data-i18n="options.ollama.privacy.title"></h2>
+    <span data-i18n="options.ollama.privacy.body"></span>
+  </div>
+
+  <div class="note">
+    <h2 data-i18n="options.noKey.title"></h2>
+    <span data-i18n="options.noKey.body"></span>
+  </div>
+
+  <script type="module" src="options.js"></script>
+</body>
+</html>

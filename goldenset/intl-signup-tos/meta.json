@@ -1,0 +1,3 @@
+{ "moment": "signup", "source": "reconstructed", "anonymized": true,
+  "url": "https://app.example.com/signup",
+  "shape": "US SaaS signup, English, no required/optional mark printed anywhere — the shape the whole intl regime exists for. The terms box is mandatory and carries no mark, so the Korean rules would strip it and block the signup." }

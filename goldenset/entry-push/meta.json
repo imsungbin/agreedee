@@ -1,0 +1,3 @@
+{ "moment": "entry", "source": "reconstructed", "anonymized": true,
+  "url": "https://example.test/event/attendance",
+  "shape": "attendance event, mark in a trailing span, one pre-checked push-advertising item" }

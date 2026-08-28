@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>가입하기</title></head>
+<body>
+<main>
+  <form class="signup">
+    <h1>회원가입</h1>
+    <fieldset>
+      <legend>약관 동의</legend>
+      <div class="row row--all">
+        <input type="checkbox" id="all" checked>
+        <label for="all">전체동의</label>
+        <p class="desc">전체 동의는 필수 및 선택 항목에 대한 동의를 포함하고 있습니다.</p>
+      </div>
+      <div class="row">
+        <input type="checkbox" id="c1" checked>
+        <label for="c1">서비스 이용약관</label>
+        <span class="badge badge--req">필수</span>
+        <a class="more" href="/policy/terms">보기</a>
+      </div>
+      <div class="row">
+        <input type="checkbox" id="c2" checked>
+        <label for="c2">개인정보 처리방침</label>
+        <span class="badge badge--req">필수</span>
+        <a class="more" href="/policy/privacy">보기</a>
+      </div>
+      <div class="row">
+        <input type="checkbox" id="c3" checked>
+        <label for="c3">마케팅 활용 및 광고 수신</label>
+        <span class="badge badge--opt">선택</span>
+        <a class="more" href="/policy/marketing">보기</a>
+      </div>
+    </fieldset>
+    <button type="button" class="submit">가입하기</button>
+  </form>
+</main>
+</body></html>

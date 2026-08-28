@@ -1,0 +1,3 @@
+{ "moment": "payment", "source": "reconstructed", "anonymized": true,
+  "url": "https://media.example.test/billing/subscribe",
+  "shape": "recurring payment with no 필수/선택 marks at all — §22 finding on every item, and no auto-apply" }

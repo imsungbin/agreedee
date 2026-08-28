@@ -1,0 +1,19 @@
+{
+  "moment": "payment",
+  "expectedMoments": 1,
+  "autoApply": false,
+  "items": [
+    { "label": "전체 동의", "mark": "absent", "isSelectAll": true,
+      "substance": "unclear", "quote": null, "action": "uncheck", "flag": "selectall_violation" },
+    { "label": "전자금융거래 기본약관", "mark": "required", "isSelectAll": false,
+      "substance": "service_essential", "quote": "본 약관에 동의하지 않으면 결제 수단을 등록할 수 없습니다.",
+      "action": "leave", "flag": null },
+    { "label": "개인정보 수집·이용 동의", "mark": "required", "isSelectAll": false,
+      "substance": "service_essential", "quote": "카드 등록과 결제 처리를 위하여 카드사에 제공할 최소한의 정보를 수집합니다.",
+      "action": "leave", "flag": null },
+    { "label": "제휴사 혜택 정보 제공", "mark": "required", "isSelectAll": false,
+      "substance": "third_party_sharing",
+      "quote": "회사는 제휴 카드사와 쇼핑몰에 회원의 결제 이력과 연락처를 제공하여 맞춤 광고와 프로모션을 안내합니다.",
+      "action": "uncheck", "flag": "label_substance_mismatch" }
+  ]
+}

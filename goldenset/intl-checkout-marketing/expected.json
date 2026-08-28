@@ -1,0 +1,11 @@
+{
+  "moment": "payment",
+  "regime": "intl",
+  "expectedMoments": 1,
+  "items": [
+    { "label": "Email me exclusive offers and discounts", "mark": "absent", "isSelectAll": false,
+      "substance": "marketing",
+      "quote": "We will send you promotional email about sales, new arrivals and discount codes for this store.",
+      "action": "uncheck", "flag": "prechecked_optional" }
+  ]
+}

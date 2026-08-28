@@ -1,0 +1,3 @@
+{ "moment": "payment", "source": "reconstructed", "anonymized": true,
+  "url": "https://shop.example.test/order/payment",
+  "shape": "checkout page: badge-only, no automatic state change (S3)" }

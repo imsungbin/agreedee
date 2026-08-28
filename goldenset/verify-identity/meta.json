@@ -1,0 +1,3 @@
+{ "moment": "verify", "source": "reconstructed", "anonymized": true,
+  "url": "https://cert.example.test/identity/step1",
+  "shape": "identity verification: every item is genuinely 필수, so Agreedee should change almost nothing" }

@@ -1,0 +1,15 @@
+{
+  "moment": "signup",
+  "expectedMoments": 1,
+  "items": [
+    { "label": "동의합니다", "mark": "required", "isSelectAll": false,
+      "substance": "service_essential", "quote": "회원가입을 위해서는 본 약관에 대한 동의가 반드시 필요합니다.",
+      "action": "check", "flag": null },
+    { "label": "동의합니다", "mark": "required", "isSelectAll": false,
+      "substance": "service_essential", "quote": "본 항목에 동의하지 않으면 회원 가입이 제한됩니다.",
+      "action": "check", "flag": null },
+    { "label": "동의합니다", "mark": "optional", "isSelectAll": false,
+      "substance": "third_party_sharing", "quote": "회사는 제휴 보험사 및 광고 대행사에 회원의 이름과 휴대전화번호를 제공할 수 있습니다.",
+      "action": "uncheck", "flag": "prechecked_optional" }
+  ]
+}

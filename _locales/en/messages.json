@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Agreedee",
+    "description": "The extension name shown in Chrome and on the Web Store."
+  },
+  "extDescription": {
+    "message": "Refuses optional consent on any site — cookie banners and consent forms alike. Never presses submit.",
+    "description": "The extension description shown in Chrome and on the Web Store."
+  }
+}

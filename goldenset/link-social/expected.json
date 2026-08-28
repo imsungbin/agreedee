@@ -1,0 +1,12 @@
+{
+  "moment": "link",
+  "expectedMoments": 1,
+  "items": [
+    { "label": "필수 제공 항목 동의", "mark": "required", "isSelectAll": false,
+      "substance": "service_essential", "quote": "이 항목은 계정 연동에 반드시 필요합니다.",
+      "action": "check", "flag": null },
+    { "label": "선택 제공 항목 동의", "mark": "optional", "isSelectAll": false,
+      "substance": "marketing", "quote": "성별과 연령대 정보가 함께 전달되어 맞춤 광고에 활용됩니다.",
+      "action": "uncheck", "flag": "prechecked_optional" }
+  ]
+}

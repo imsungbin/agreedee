@@ -1,0 +1,3 @@
+{ "moment": "payment", "source": "reconstructed", "anonymized": true,
+  "url": "https://pay.example.test/payment/register",
+  "shape": "간편결제 registration: a third-party-sharing item printed as 필수, plus a KRDS 일괄 선택 violation" }
